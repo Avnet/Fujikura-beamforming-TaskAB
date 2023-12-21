@@ -164,7 +164,7 @@ Explorer.
 
 2.  Download the boot image archive zip file from the public repository
     at [ZCU208 uSD
-    Card](https://avtinc.sharepoint.com/:f:/r/sites/AAG_Public/Shared%20Documents/Public%20releases/RFSoC/ZCU208/Fujikura/ZCU208%20uSD%20Card?csf=1&web=1&e=w5Erve).
+    Card](https://github.com/Avnet/Fujikura-beamforming/releases/tag/3.0.0).
 
 3.  Unzip the archive to the root level of the SD card.  
     <img src="./media/image4.png" style="width:1.1875in;height:1.67708in" />
