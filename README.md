@@ -1,6 +1,6 @@
 <table class="sphinxhide" width="100%">
  <tr width="100%">
-    <td align="center"><img src="./media/Avnet_logo_rev_rgb-fix.png" width="30%"/><h1><img src="./media/Fujikura_logo.png" width="30%"/><h1>
+    <td align="center"><img src="./media/Avnet_logo_rev_rgb-fix.png" width="40%"/><h1><img src="./media/Fujikura_logo.png" width="30%"/><h1>
 	5G mmWave PAAM Development Platform User Guide
     </td>
  </tr>
