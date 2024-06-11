@@ -21,47 +21,34 @@
 |         |     |              |     |                                                       |     |
 # Table of contents
 
-1. [Overview](#1-overview)
-
-2. [AMD ZCU208 Evaluation Board](#zcu208-board)
-
-3. [uSD Card Preparation](#usd-card-preparation)
-
-4. [Connecting the ZCU208 to your PC](#connecting-the-zcu208-to-your-pc)
-
-    4.1. [Serial Port Connection](#41-serial-port-connection)
-
-    4.2. [Getting the IP Address](#42-getting-the-ip-address)
-
-    4.3. [Setting a Static IP Address](#43-setting-a-static-ip-address)
-
-5. [Connecting the Fujikura PAAM Daughtercard](#connecting-the-fujikura-paam-carrier)
-
-    5.1. [Connecting Power and the Digital Interface](#connecting-power-and-the-digital-interface)
-
-    5.2. [Using the C# Test GUI (optional)](#using-the-c-test-gui-optional)
-
-    5.3. [Connecting the Analog Path and Instruments](#connecting-the-analog-path-and-instruments)
-
-6. [Using the CLK-104 Module](#using-the-clk-104-module)
-
-7. [Installing MATLAB and Avnet RFSoC Explorer®](#installing-matlab-and-avnet-rfsoc-explorer)
-
-    7.1. [Setting up Python Support in Matlab](#setting-up-python-support-in-matlab)
-   
-    7.1.1 [Setting the Python version in MATLAB](#setting-the-python-version-in-matlab)
-
-8. [Testing the RFSoC Explorer Digital Interface](#testing-the-rfsoc-explorer-digital-interface)
-
-9. [Renesas 8V97003 18 GHz RF Synthesizer](#renesas-8v97003-18-ghz-rf-synthesizer)
-
-10. [Fixture for the Daughtercard](#fixture-for-the-daughtercard)
-
-    10.1 [Daughtercard installation on the fixing stand](#daughtercard-installation-on-the-fixing-stand)
-
-11. [Over-the-air Testing with Rohde & Schwarz ATS800B compact antenna test range](#over-the-air-testing)
-
-12. [Terminology](#terminology)
+- [Document Control](#document-control)
+- [Version History](#version-history)
+- [Table of contents](#table-of-contents)
+- [Figures](#figures)
+- [1) Overview ](#1-overview-)
+- [2) AMD ZCU208 Evaluation Board ](#2-amd-zcu208-evaluation-board-)
+- [3) uSD Card Preparation ](#3-usd-card-preparation-)
+- [4 Connecting the ZCU208 to your PC ](#4-connecting-the-zcu208-to-your-pc-)
+  - [4.1 Serial Port Connection ](#41-serial-port-connection-)
+  - [4.2 Getting the IP Address ](#42-getting-the-ip-address-)
+  - [4.3 Setting a Static IP Address ](#43-setting-a-static-ip-address-)
+- [5 Connecting the Fujikura PAAM Daughtercard ](#5-connecting-the-fujikura-paam-daughtercard-)
+  - [5.1 Connecting Power and the Digital Interface ](#51-connecting-power-and-the-digital-interface-)
+  - [5.2 Using the C# Test GUI (optional) ](#52-using-the-c-test-gui-optional-)
+  - [5.3 Connecting the Analog Path and Instruments ](#53-connecting-the-analog-path-and-instruments-)
+- [6 Using the CLK-104 Module ](#6-using-the-clk-104-module-)
+- [7 Installing MATLAB and Avnet RFSoC Explorer® ](#7-installing-matlab-and-avnet-rfsoc-explorer-)
+  - [7.1 Setting up Python Support in Matlab ](#71-setting-up-python-support-in-matlab-)
+    - [7.1.1 Setting the Python version in MATLAB ](#711-setting-the-python-version-in-matlab-)
+- [8) Testing the RFSoC Explorer Digital Interface ](#8-testing-the-rfsoc-explorer-digital-interface-)
+  - [8.1 ADC and DAC Control Tab ](#81-adc-and-dac-control-tab-)
+- [9) Renesas 8V97003 18 GHz RF Synthesizer ](#9-renesas-8v97003-18-ghz-rf-synthesizer-)
+- [10) Fixture for the Daughtercard ](#10-fixture-for-the-daughtercard-)
+  - [10.1 Daughtercard installation on the fixing stand ](#101-daughtercard-installation-on-the-fixing-stand-)
+- [11) Over-the-air Testing with Rohde \& Schwarz ATS800B compact antenna test range (CATR) ](#11-over-the-air-testing-with-rohde--schwarz-ats800b-compact-antenna-test-range-catr-)
+- [TX EVM Measurement](#tx-evm-measurement)
+- [Opposite EVM Measurement(2 kits)](#opposite-evm-measurement2-kits)
+- [12) Terminology ](#12-terminology-)
 
 # Figures
 
@@ -658,15 +645,27 @@ style="width:6.01538in;height:3.25833in" />
 6.  The user can now make changes to some PAAM controls. In the image
     below Tx Vertical Polarization is turned on and the DSA value is
     changed to 5. Note that the **<span class="mark">Send to
-    PAAM</span>** button has turned red. These changes on the GUI will
+    PAAM</span>** button has turned green. These changes on the GUI will
     only take effect on the hardware once **Send to PAAM** is clicked.
 
 <img src="./media/image33a.png" style="width:6.5in;height:3.52083in" />
 
 7.  Send to PAAM will turn grey again and updated PAAM settings will be
-    displayed in the dialog box.
+    displayed in the dialog box, and the image of the PAAM will be updated to show the active elements on the array.
 
 <img src="./media/image34a.png" style="width:6.5in;height:3.52083in" />
+
+8. If the user wishes to see the 2D elevation and azimuth plots or a 3D plot which approximate the beampattern of an array of 5G antenna elements, check the boxes next to the 2D/3D Beam Angle Plot text before sending the settings to the PAAM. 
+   NOTE: Both the Phased Array System Toolbox and the Antenna Toolbox must be installed to use.
+
+<img src="./media/image35a.png" style="width:6.5in;height:3.52083in" />
+
+## 8.1 ADC and DAC Control Tab <a name="adc-dac-control-tab"></a>
+    The ADC/DAC tab allows for reading ADC values and writing DAC values. As part of a successful initialization of the PAAM by RFSoC Explorer, default values will be written to enable the DAC channels.
+
+    Each of the rails has a text field in which to enter the desired output voltage, which will then send a command to the app running on the PS to set the desired trim.
+
+<img src="./media/fjk-adc-dac-control.png" style="width:6.5in;height:3.52083in" />
 
 # 9) Renesas 8V97003 18 GHz RF Synthesizer <a name="renesas-8v97003-18-ghz-rf-synthesizer"></a>
 
