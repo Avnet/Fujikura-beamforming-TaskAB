@@ -683,6 +683,8 @@ After successfully initializing the Fujikura PAAM daughtercard, the "Read ADCs" 
 
 Each of the rails has a text field in which to enter the desired output voltage, which will then send a command to the app running on the AMD Zynq RFSoC Processing Subsystem (PS) to set the appropriate trim value.
 
+    >NOTE: Most users will not need to adjust the DAC values.
+
 <img src="./media/fjk-adc-dac-control.PNG" style="width:6.5in;height:3.52083in" />
 
 # 9) Renesas 8V97003 18 GHz RF Synthesizer <a name="renesas-8v97003-18-ghz-rf-synthesizer"></a>
