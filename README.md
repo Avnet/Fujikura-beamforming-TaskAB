@@ -53,8 +53,7 @@
 
 8. [Testing the RFSoC Explorer Digital Interface](#testing-the-rfsoc-explorer-digital-interface)
 
-	8.1 [ADC and DAC Control Tab ](#adc-and-dac-control-tab)
-
+    8.1 [ADC and DAC Control Tab ](#adc-and-dac-control-tab)
 9. [Renesas 8V97003 18 GHz RF Synthesizer](#renesas-8v97003-18-ghz-rf-synthesizer)
 
 10. [Fixture for the Daughtercard](#fixture-for-the-daughtercard)
@@ -676,7 +675,7 @@ style="width:6.01538in;height:3.25833in" />
 
 <img src="./media/image35a.png" style="width:6.5in;height:3.52083in" />
 
-## 8.1 ADC and DAC Control Tab <a name="adc-dac-control-tab"></a>
+## 8.1 ADC and DAC Control Tab <a name="adc-and-dac-control-tab"></a>
     
 The Fujikura PAAM Daughtercard includes the ability to measure and adjust all system voltage rails by way of onboard ADCs and DACs. The ADC/DAC tab allows for reading ADC values and writing DAC values. As part of a successful initialization of the PAAM by Avnet RFSoC Explorer, default values will be written to enable the DAC channels.
 
