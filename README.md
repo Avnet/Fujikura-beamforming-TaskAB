@@ -677,9 +677,10 @@ style="width:6.01538in;height:3.25833in" />
 <img src="./media/image35a.png" style="width:6.5in;height:3.52083in" />
 
 ## 8.1 ADC and DAC Control Tab <a name="adc-dac-control-tab"></a>
-    The ADC/DAC tab allows for reading ADC values and writing DAC values. As part of a successful initialization of the PAAM by RFSoC Explorer, default values will be written to enable the DAC channels.
+    
+The ADC/DAC tab allows for reading ADC values and writing DAC values. As part of a successful initialization of the PAAM by RFSoC Explorer, default values will be written to enable the DAC channels.
 
-    Each of the rails has a text field in which to enter the desired output voltage, which will then send a command to the app running on the PS to set the appropriate trim.
+Each of the rails has a text field in which to enter the desired output voltage, which will then send a command to the app running on the PS to set the appropriate trim.
 
 <img src="./media/fjk-adc-dac-control.PNG" style="width:6.5in;height:3.52083in" />
 
