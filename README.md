@@ -187,9 +187,7 @@ Setup](https://www.xilinx.com/support/documents/boards_and_kits/zcu208/2020_1/xt
 
 In summary:
 
-1.  You should ensure that you install the [FTDI CDM
-    drivers](http://www.ftdichip.com/Drivers/CDM/CDM21228_Setup.zip) so
-    that your PC will recognize the COM ports.
+1.  If your PC does not automatically detect and enumerate new COM ports for the ZCU208, you may need to install [FTDI Virtual COM Port (VCP) drivers](https://ftdichip.com/drivers/vcp-drivers/).
 
 2.  Three new COM ports for the ZCU208 should appear in the Windows
     Device Manager. Each of these COM ports should show that it is using
@@ -671,7 +669,7 @@ style="width:6.01538in;height:3.25833in" />
 
 8. If you wish to see the 2D elevation and azimuth plots or a 3D plot which approximate the beampattern of an array of 5G antenna elements, check the boxes next to the 2D/3D Beam Angle Plot text before sending the settings to the PAAM. 
    
-    > NOTE: Both the Phased Array System Toolbox and the Antenna Toolbox must be installed to create plots.
+    > NOTE: Both the [Phased Array System Toolbox](https://www.mathworks.com/products/phased-array.html) and the [Antenna Toolbox](https://www.mathworks.com/products/antenna.html?s_tid=srchtitle_site_search_2_antenna%2520toolbox) must be installed to create plots.
 
 <img src="./media/image35a.png" style="width:6.5in;height:3.52083in" />
 
