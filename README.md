@@ -680,7 +680,7 @@ style="width:6.01538in;height:3.25833in" />
 
     Each of the rails has a text field in which to enter the desired output voltage, which will then send a command to the app running on the PS to set the desired trim.
 
-<img src="./media/fjk-adc-dac-control.png" style="width:6.5in;height:3.52083in" />
+<img src="./media/fjk-adc-dac-control.PNG" style="width:6.5in;height:3.52083in" />
 
 # 9) Renesas 8V97003 18 GHz RF Synthesizer <a name="renesas-8v97003-18-ghz-rf-synthesizer"></a>
 
