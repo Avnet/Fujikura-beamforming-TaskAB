@@ -54,7 +54,7 @@
 8. [Testing the RFSoC Explorer Digital Interface](#testing-the-rfsoc-explorer-digital-interface)
 
 	8.1 [ADC and DAC Control Tab ](#adc-and-dac-control-tab)
-	
+
 9. [Renesas 8V97003 18 GHz RF Synthesizer](#renesas-8v97003-18-ghz-rf-synthesizer)
 
 10. [Fixture for the Daughtercard](#fixture-for-the-daughtercard)
@@ -653,11 +653,11 @@ style="width:6.01538in;height:3.25833in" />
 
 5.  When initialization is complete, the dialog box will display the
     steps taken, followed by **Successfully initialized PAAM
-    Daughtercard with default settings**.
+    Daughtercard with default settings** and the printout from committing those settings to the PAAM.
 
 <img src="./media/image32a.png" style="width:6.5in;height:3.52083in" />
 
-6.  The user can now make changes to some PAAM controls. In the image
+6.  You can now make changes to some PAAM controls. In the image
     below Tx Vertical Polarization is turned on and the DSA value is
     changed to 5. Note that the **<span class="mark">Send to
     PAAM</span>** button has turned green. These changes on the GUI will
@@ -670,17 +670,19 @@ style="width:6.01538in;height:3.25833in" />
 
 <img src="./media/image34a.png" style="width:6.5in;height:3.52083in" />
 
-8. If the user wishes to see the 2D elevation and azimuth plots or a 3D plot which approximate the beampattern of an array of 5G antenna elements, check the boxes next to the 2D/3D Beam Angle Plot text before sending the settings to the PAAM. 
+8. If you wish to see the 2D elevation and azimuth plots or a 3D plot which approximate the beampattern of an array of 5G antenna elements, check the boxes next to the 2D/3D Beam Angle Plot text before sending the settings to the PAAM. 
    
-   NOTE: Both the Phased Array System Toolbox and the Antenna Toolbox must be installed to use.
+   >NOTE: Both the Phased Array System Toolbox and the Antenna Toolbox must be installed to use.
 
 <img src="./media/image35a.png" style="width:6.5in;height:3.52083in" />
 
 ## 8.1 ADC and DAC Control Tab <a name="adc-dac-control-tab"></a>
     
-The ADC/DAC tab allows for reading ADC values and writing DAC values. As part of a successful initialization of the PAAM by RFSoC Explorer, default values will be written to enable the DAC channels.
+The Fujikura PAAM Daughtercard includes the ability to measure and adjust all system voltage rails by way of onboard ADCs and DACs. The ADC/DAC tab allows for reading ADC values and writing DAC values. As part of a successful initialization of the PAAM by Avnet RFSoC Explorer, default values will be written to enable the DAC channels.
 
-Each of the rails has a text field in which to enter the desired output voltage, which will then send a command to the app running on the PS to set the appropriate trim.
+After successfully initializing the Fujikura PAAM daughtercard, the "Read ADCs" button will turn red, indicating that the ADC channels are available for reading. Reading the ADC values before initialization will not guarantee correct readback.
+
+Each of the rails has a text field in which to enter the desired output voltage, which will then send a command to the app running on the AMD Zynq RFSoC Processing Subsystem (PS) to set the appropriate trim value.
 
 <img src="./media/fjk-adc-dac-control.PNG" style="width:6.5in;height:3.52083in" />
 
