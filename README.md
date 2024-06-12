@@ -671,7 +671,7 @@ style="width:6.01538in;height:3.25833in" />
 
 8. If you wish to see the 2D elevation and azimuth plots or a 3D plot which approximate the beampattern of an array of 5G antenna elements, check the boxes next to the 2D/3D Beam Angle Plot text before sending the settings to the PAAM. 
    
-   >NOTE: Both the Phased Array System Toolbox and the Antenna Toolbox must be installed to use.
+> NOTE: Both the Phased Array System Toolbox and the Antenna Toolbox must be installed to use.
 
 <img src="./media/image35a.png" style="width:6.5in;height:3.52083in" />
 
@@ -683,7 +683,7 @@ After successfully initializing the Fujikura PAAM daughtercard, the "Read ADCs" 
 
 Each of the rails has a text field in which to enter the desired output voltage, which will then send a command to the app running on the AMD Zynq RFSoC Processing Subsystem (PS) to set the appropriate trim value.
 
-    >NOTE: Most users will not need to adjust the DAC values.
+> NOTE: Most users will not need to adjust the DAC values.
 
 <img src="./media/fjk-adc-dac-control.PNG" style="width:6.5in;height:3.52083in" />
 
