@@ -8,16 +8,16 @@
 
 # Document Control
 
-**Document Version:** 1.0
+**Document Version:** 2.0
 
-**Document Date:** 12/5/2023
+**Document Date:** 6/12/2024
 
 # Version History
 
 | Version |     | Date         |     | Comment                                               |     |
 |---------|-----|--------------|-----|-------------------------------------------------------|-----|
+| 1.1     |     | Jun 12, 2024 |     | Public release with RFSoC Explorer 3.1                |     |
 | 1.0     |     | Dec 5, 2023  |     | Initial public release with RFSoC Explorer 3.0        |     |
-|         |     |              |     |                                                       |     |
 |         |     |              |     |                                                       |     |
 # Table of contents
 
