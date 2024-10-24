@@ -1,7 +1,9 @@
 <table class="sphinxhide" width="100%">
  <tr width="100%">
     <td align="center"><img src="./media/Avnet_logo_rev_rgb-fix.png" width="40%"/><h1><img src="./media/Fujikura_logo.png" width="30%"/><h1>
-	5G mmWave PAAM Development Platform User Guide
+    5G mmWave <span style="color:red;">Task-A/B</span> PAAM Development Platform User Guide
+    <span style="color:red;">__Note: this document is not the latest and has been superseded__</span>
+    Please see the [5G mmWave <span style="color:red;">Type-C</span> PAAM Development Platform User Guide](https://github.com/Avnet/Fujikura-beamforming-typeC)
     </td>
  </tr>
 </table>
