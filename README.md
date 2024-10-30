@@ -8,7 +8,7 @@
 
 <br>
 <span style="color:red; font-size:25px;">Note!!   This document is not the latest and it has been superseded.</span><br>
-Please see the <a href="https://github.com/Avnet/Fujikura-beamforming-typeC" style="font-size:25px;">5G mmWave Type-C PAAM Development Platform User Guide</a>.<br>
+Please see the <a href="https://github.com/Avnet/Fujikura-beamforming" style="font-size:25px;">5G mmWave Type-C PAAM Development Platform User Guide</a>.<br>
 
 # Document Control
 
